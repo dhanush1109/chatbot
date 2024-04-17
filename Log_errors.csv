@@ -1,0 +1,70 @@
+Major Log Errors,Description,Troubleshoot
+Kernel - OOM killer enabled,"
+When a system runs out of memory (OOM), the Kernel's Out-of-Memory (OOM) killer activates to terminate processes, preventing a complete system crash. It sacrifices resource-intensive processes to ensure system stability and prevent memory exhaustion.","
+To troubleshoot Kernel - OOM killer enabled errors, start by identifying memory-intensive processes using monitoring tools like top or htop. Adjust resource limits or prioritize critical processes. Further assistance can be found in the Linux documentation or forums like Stack Overflow: https://stackoverflow.com/questions/tagged/linux."
+Kernel - nvme,"
+Kernel NVMe errors indicate issues with Non-Volatile Memory Express (NVMe) storage devices. These errors can arise from hardware malfunctions, driver issues, or compatibility problems. Troubleshooting may involve updating drivers, checking hardware connections, or consulting manufacturer documentation for firmware updates.","
+To troubleshoot Kernel NVMe errors, start by checking system logs for specific error messages. Ensure NVMe drivers are up to date and compatible with your kernel version. Verify hardware connections and consider firmware updates for NVMe devices. For further assistance, consult resources like the NVMe Specification or community forums such as the NVMe Developer Community: https://nvmexpress.org/developers/"
+Kernel - ACPI,"
+Kernel ACPI errors indicate issues with Advanced Configuration and Power Interface (ACPI), which manages power and hardware configurations. These errors may stem from incompatible hardware, BIOS settings, or ACPI driver issues. Troubleshooting involves updating BIOS firmware, adjusting ACPI settings, or seeking support from hardware manufacturers.","
+To troubleshoot Kernel ACPI errors, start by updating your system BIOS to the latest version provided by your hardware manufacturer. Check ACPI settings in BIOS and ensure they are configured correctly. If issues persist, consult relevant documentation or seek support from the ACPI community: https://www.acpi.info/"
+Kernel - intel-hid,"
+Kernel Intel-HID errors relate to the Intel Hardware Interface Driver, used for managing hardware components like sensors and input devices. These errors may indicate driver issues, hardware malfunctions, or compatibility problems. Troubleshooting involves updating drivers, checking hardware connections, and consulting Intel's support resources for further assistance.","
+To troubleshoot Kernel Intel-HID errors, ensure you have the latest drivers installed from Intel's official website. Verify hardware connections and compatibility with your system. If issues persist, consult Intel's support resources or community forums for assistance: https://www.intel.com/content/www/us/en/support.html"
+Kernel - ata1,"
+Kernel ATA1 errors indicate issues with the Advanced Technology Attachment (ATA) interface for storage devices. These errors may stem from cable or connector problems, hardware malfunctions, or driver issues. Troubleshooting involves checking connections, testing hardware components, and updating ATA drivers.","
+To troubleshoot Kernel ATA1 errors, start by checking the cables and connectors for proper connection. Test the affected drive with diagnostic tools to identify any hardware issues. Update the ATA drivers and firmware if available. For further assistance, consult relevant documentation or seek support from community forums like the Linux Kernel Mailing List: https://www.kernel.org/doc/html/latest/admin-guide/kernel-parameters.html"
+Kernel - UFW BLOCK,"
+Kernel UFW BLOCK errors occur when the Uncomplicated Firewall (UFW) blocks incoming or outgoing connections as configured. These errors indicate that traffic has been blocked based on defined firewall rules, often to enhance system security. Review UFW configuration and rules to ensure intended traffic is allowed while unwanted traffic is blocked.","To troubleshoot Kernel UFW BLOCK errors, examine UFW configuration and rules to ensure they align with intended network traffic. Check system logs for detailed information on blocked connections. Adjust UFW rules accordingly to allow desired traffic and block unauthorized access. For further assistance, consult the UFW documentation or community forums: https://help.ubuntu.com/community/UFW"
+Startup errors,"Startup errors occur during the boot process when the operating system encounters issues initializing hardware, loading drivers, or executing essential processes. These errors can lead to system instability or failure to boot properly, requiring troubleshooting to identify and resolve underlying issues.","
+To troubleshoot startup errors, begin by reviewing system logs for error messages that indicate the cause. Try booting in safe mode or using recovery tools to diagnose and fix issues. Check hardware connections and ensure drivers are up to date. For further assistance, consult the documentation for your operating system or community forums like Stack Overflow: https://stackoverflow.com/questions/tagged/startup-error"
+System - gnome_shell,"
+System GNOME Shell errors occur when the GNOME desktop environment encounters issues with its graphical user interface. These errors may result from software conflicts, outdated graphics drivers, or insufficient system resources. Troubleshooting involves updating software, checking compatibility, and investigating logs for specific error messages.","
+To troubleshoot GNOME Shell errors, start by updating your graphics drivers and GNOME Shell to the latest versions. Try resetting GNOME settings to defaults or reinstalling GNOME Shell extensions. If issues persist, check system logs for error messages and consult the GNOME community or forums for assistance: https://discourse.gnome.org/
+
+
+
+"
+System - dbus_daemon,"System D-Bus Daemon errors occur when the D-Bus system message bus encounters issues facilitating communication between applications and the system. These errors may result from misconfigurations, software conflicts, or corrupted system files. Troubleshooting involves checking D-Bus configuration, reinstalling D-Bus packages, or investigating system logs for specific error messages.","
+To troubleshoot D-Bus Daemon errors, start by verifying the integrity of system files and reinstalling D-Bus packages if necessary. Check D-Bus configuration files for errors and ensure proper permissions. If issues persist, consult the D-Bus documentation or community forums for assistance: https://www.freedesktop.org/wiki/Software/dbus/
+
+
+
+"
+System - nautilus,"System Nautilus errors occur when the Nautilus file manager encounters issues in the GNOME desktop environment. These errors may stem from file system inconsistencies, permission problems, or corrupted configuration files. Troubleshooting involves checking file system integrity, adjusting permissions, or reinstalling Nautilus.","
+To troubleshoot Nautilus errors, start by resetting Nautilus settings to default or reinstalling the package. Check system logs for specific error messages and investigate any relevant permissions issues. For further assistance, consult the GNOME community or forums: https://discourse.gnome.org/"
+System - avahi_daemon,"
+System Avahi Daemon errors occur when the Avahi service encounters issues facilitating zero-configuration networking. These errors may result from network configuration problems, conflicts with other services, or corrupted configuration files. Troubleshooting involves checking Avahi configuration, verifying network settings, and investigating system logs for specific error messages.","
+To troubleshoot Avahi Daemon errors, start by checking the Avahi configuration files for any misconfigurations. Verify that the network settings are correct and ensure that Avahi is not conflicting with other network services. If issues persist, consult the Avahi documentation or community forums for assistance: https://avahi.org/"
+Authentication - CRON ,"
+Authentication CRON errors occur when scheduled tasks configured in the cron utility encounter authentication issues. These errors may stem from incorrect permissions or invalid authentication credentials. Troubleshooting involves verifying the permissions of cron configuration files and ensuring proper authentication settings for scheduled tasks.","To troubleshoot CRON authentication errors, ensure that cron jobs are configured with correct permissions and user credentials. Verify authentication settings in cron configuration files. If issues persist, consult cron documentation or community forums for assistance: https://linux.die.net/man/5/crontab"
+Authentication - gdm-password,"Authentication gdm-password errors occur when the GNOME Display Manager (gdm) encounters issues with user authentication during login. These errors may result from incorrect user credentials, authentication service failures, or permission problems. Troubleshooting involves verifying user credentials, checking authentication service status, and investigating system logs for specific error messages.","
+To troubleshoot gdm-password authentication errors, ensure that user credentials are correct and that the authentication service is running properly. Check system logs for specific error messages related to authentication failures. For further assistance, consult the GNOME community or forums: https://discourse.gnome.org/
+
+
+
+"
+Authentication - systemd-logind,"Authentication systemd-logind errors occur when the systemd-logind service encounters issues with user authentication and session management. These errors may stem from permission problems, configuration issues, or conflicts with other services. Troubleshooting involves checking systemd-logind configuration, verifying user permissions, and investigating system logs for specific error messages.","
+To troubleshoot systemd-logind authentication errors, ensure proper configuration and permissions. Check systemd-logind logs for error messages and verify that the service is running correctly. If issues persist, consult systemd documentation or community forums for assistance: https://www.freedesktop.org/wiki/Software/systemd/
+
+
+
+"
+Authentication - gnome-keyring-daemon,"Authentication gnome-keyring-daemon errors occur when the GNOME Keyring service encounters issues managing cryptographic keys and passwords. These errors may result from configuration problems, permission issues, or conflicts with other services. Troubleshooting involves checking gnome-keyring configuration, verifying permissions, and investigating system logs for specific error messages.","
+To troubleshoot gnome-keyring-daemon errors, check its configuration and ensure proper permissions. Investigate system logs for error messages related to authentication failures. If issues persist, consult GNOME documentation or community forums for assistance: https://wiki.gnome.org/Projects/GnomeKeyring"
+DPKG - trigproc,"
+DPKG trigproc errors occur during package installation or removal when triggers, scripts activated by package changes, encounter issues. These errors may result from script errors, dependencies, or conflicts with other packages. Troubleshooting involves inspecting trigger scripts, resolving dependencies, and checking system logs for specific error messages.","
+To troubleshoot DPKG trigproc errors, examine trigger scripts for errors and ensure dependencies are met. Check system logs for specific error messages related to trigger processing. If issues persist, consult Debian documentation or community forums for assistance: https://www.debian.org/support
+
+
+
+"
+DPKG - status half-configure,"
+DPKG status half-configure errors occur when a package installation process is interrupted, leaving it in an incomplete state. These errors may result from system crashes or manual interruption of package installations. Troubleshooting involves manually configuring or removing affected packages to resolve inconsistencies in the package management system.","To troubleshoot DPKG status half-configure errors, try completing or removing the affected packages manually using DPKG commands. Check system logs for any related error messages. If issues persist, consult Debian documentation or community forums for assistance: https://www.debian.org/support"
+DPKG - Configure,"
+DPKG Configure errors occur when the DPKG package manager encounters issues during the configuration of installed packages. These errors may result from conflicts, dependencies, or corrupt package files. Troubleshooting involves resolving dependencies, checking package integrity, and investigating system logs for specific error messages.","
+To troubleshoot DPKG Configure errors, try reinstalling the affected packages, ensuring dependencies are met. Check for any conflicting packages or file permissions issues. Review system logs for detailed error messages. For further assistance, consult Debian documentation or community forums: https://www.debian.org/support
+
+
+
+"
